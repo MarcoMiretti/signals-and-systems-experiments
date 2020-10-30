@@ -1,3 +1,5 @@
+pkg load signal
+
 ## Cargamos el archivo de audio.
 [vuvuzela_samples, fs] = audioread ('inputs/bebe.flac');
 
@@ -75,4 +77,5 @@ xlabel ("frequency [Hz]")
 ylabel ("amplitude")
 
 ## Escribir el resultado como audio
+mkdir ("data");
 audiowrite ("data/bebe_filtado.flac", filtered_vuvuzela, fs)
