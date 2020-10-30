@@ -77,4 +77,5 @@ xlabel ("frequency [Hz]")
 ylabel ("amplitude")
 
 ## Escribir el resultado como audio
+mkdir ("data");
 audiowrite ("data/bebe_filtado.flac", filtered_vuvuzela, fs)
